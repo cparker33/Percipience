@@ -1,0 +1,67 @@
+#StudRoomCont {
+
+  width: 800px;
+  height: 650px;
+  border: 1px solid red;
+}
+
+#StudRoomTopBar {
+
+  height: 100px;
+  border-bottom: 2px solid #000; 
+}
+
+#StudRoomTopic {
+
+  text-align: center;
+}
+
+#StudRoomForm {
+
+  width: 400px;
+  height: 250px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+#StudRoomSbmtBtn {
+
+  width: 80px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#StudRoomSbmtBtn:hover {
+
+  cursor: pointer;
+}
+
+#StudRoomSlide {
+
+  width: 200px;
+  margin: auto;
+}
+
+#StudRoomSlideCont {
+
+  width: 250px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#StudRoomRateH2 {
+
+  text-align: center;
+}
+
+
+
+

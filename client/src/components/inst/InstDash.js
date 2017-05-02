@@ -22,7 +22,7 @@ class InstDash extends Component {
     return (
 
       <div
-        id='cInsDashCont'>
+        id='InstDashCont'>
 
         <h1
           id='InstDashHeader'>
