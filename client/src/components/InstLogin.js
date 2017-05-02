@@ -21,19 +21,25 @@ class InstLogin extends Component {
              id='LoginForm'>
 
                 <input 
+                  id='usrName'
                   type='text' 
                   name='username' 
                   value='usernameState'
                   placeholder='Username'/>
 
                 <input
+                  id='pWord'
                   type='password'
                   name='password'
                   value='passwordState'
                   placeholder='Password' />
 
                 <button
-                  type='submit' />
+                  type='submit' >
+
+                  Submit
+
+                </button>
 
             </form>
 
