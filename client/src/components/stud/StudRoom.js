@@ -7,23 +7,35 @@ import StudentGraph from '../charts/studentGraph'
 
 class StudRoom extends Component {
 
-  constructor() {
+  constructor(props) {
 
-    super()
+    super(props)
 
     this.state = {
 
+      user: '',
+
+      value: 0
+
+
     }
+    this.slideChange = this.slideChange.bind(this)
   }
 
 
-  slideChange () {
+  slideChange (event) {
 
     var c = document.getElementById('StudRoomSlide').value
 
     document.getElementById('StudRoomSlideNum').innerHTML = (c)
     
+    this.setState({
+      value: event.target.value
+
+    })
+
   }
+
 
 
   rtd = setInterval( ()=> { 
