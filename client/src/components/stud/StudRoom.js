@@ -19,14 +19,12 @@ class StudRoom extends Component {
     }
 
     this.slideChange = this.slideChange.bind(this)
+    
   }
 
 
-  slideChange (event) {
+  slideChange  = (event) => {
 
-    var c = document.getElementById('StudRoomSlide').value
-
-    document.getElementById('StudRoomSlideNum').innerHTML = (c)
     
     this.setState({
 
@@ -35,6 +33,27 @@ class StudRoom extends Component {
     })
 
   }
+
+  slideIncrement = (event) => {
+
+    
+    this.setState({
+
+      value: Number(document.getElementById('StudRoomSlide').value) + 1
+
+    })
+  }
+
+  slideDecrement = (event) => {
+
+    
+    this.setState({
+
+      value: Number(document.getElementById('StudRoomSlide').value) - 1
+
+    })
+  }
+
 
 
 
@@ -49,7 +68,8 @@ class StudRoom extends Component {
         topic: this.props.curr_topic
       })
 
-  }, 1000);
+  }, 1000)
+
 
 
   render() {
@@ -74,8 +94,17 @@ class StudRoom extends Component {
 
           <h2
             id='StudRoomRateH2'>Rate your comprehension of the above topic.</h2>
+
+          <div
+            id='StudRoomScore'>
+
+             <i className="fa fa-minus-square fa-4x" aria-hidden="true" onClick={this.slideDecrement}></i>
             
-          <p id='StudRoomSlideNum'>0</p>
+          <p id='StudRoomSlideNum'>{this.state.value}</p>
+
+          <i className="fa fa-plus-square fa-4x" aria-hidden="true" onClick={this.slideIncrement}></i>
+
+          </div>
 
           <div
             id='StudRoomSlideCont'>
@@ -101,7 +130,9 @@ class StudRoom extends Component {
 
             </div>
 
+           
           </div>
+
           <div
 
             id='userRoomCont'>
@@ -127,7 +158,7 @@ class StudRoom extends Component {
 
         </div>
 
-
+        
       </div>
     )
   }

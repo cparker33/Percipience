@@ -8,10 +8,11 @@
 and (max-device-width : 480px) {
 
 #StudRoomCont {
-
+  margin-top:40px;
   width: 100%;
-  height: 667px;
+  height: 550px;
   background-color: #00284d;
+  border-radius: 15px;
   
   }
 }
@@ -34,7 +35,7 @@ and (max-device-width : 480px) {
   color: #FFF;
   text-align: center;
   margin-top: 0px;
-  padding-top: 10px;
+  padding-top: 40px;
   font-family: 'Work Sans', cursive;
   font-size: 30px;
   }
@@ -56,10 +57,11 @@ and (max-device-width : 480px) {
 
 #StudRoomForm {
 
-  width: 95%;
-  height: 300px;
+  width: 100%;
+  position: relative;
+  height: 280px;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 40px;
   border-radius: 15px;
   background-color: #80bfff;
   border: 1px solid #000;
@@ -67,32 +69,41 @@ and (max-device-width : 480px) {
  }
 }
 
-#StudRoomSbmtBtn {
 
-  width: 80px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  border: 1px solid #000;
-  border-radius: 15px;
-  margin: auto;
-  margin-top: 30px;
+@media only screen and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+#StudRoomScore{
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+
+  }
 }
 
-#StudRoomSbmtBtn:hover {
+.fa{
+  display: none;
+}
 
-  cursor: pointer;
+@media only screen and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+  .fa{
+
+    display: inline-flex;
+  }
 }
 
 #StudRoomSlide {
 
-  width: 300px;
+  width: 90%;
   margin: auto;
 }
 
 #StudRoomSlideCont {
 
-  width: 350px;
+  width: 95%;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -133,8 +144,50 @@ and (max-device-width : 480px) {
   font-size: 20px;
 }
 
+@media only screen and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+#StudRoomUserCont {
+
+  display:block;
+  position: absolute;
+  right:50%;
+  margin: 20px auto auto 5px;
+  color: white;
+  width: 30%;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid white;
+  text-align: center;
+  font-family: 'Work Sans', cursive;
+  font-size: 10px;
+
+  }
+}
+
+@media only screen and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+#StudRoomRoomCont {
+
+  display:block; 
+  position: absolute;
+  left: 50%;
+  margin:20px 5px auto auto;
+  color:white;
+  width: 30%;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid white;
+  text-align: center;
+  font-family: 'Work Sans', cursive;
+  font-size: 10px;
+
+  }
+}
+
 #userRoomCont{
-  width:600px;
+  width:100px;
   margin: auto;
 
 }
